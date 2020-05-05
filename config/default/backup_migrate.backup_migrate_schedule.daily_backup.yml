@@ -1,0 +1,15 @@
+uuid: 3c4b1743-e990-4a91-9c44-4b4af1894242
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hJalU5_4jVFQSrw5ao3BsLbyZh6VFdAqrUhYzBlOo6k
+id: daily_backup
+label: 'Daily backup'
+enabled: true
+keep: 7
+period: 86400
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: null

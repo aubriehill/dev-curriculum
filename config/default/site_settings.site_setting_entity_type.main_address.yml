@@ -1,0 +1,10 @@
+uuid: e93b685c-5499-4371-aea1-3958165cad57
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tyaPiu7JQ8VDuas7RXCmGuiLdZwY78dBuoF5_jf1ERo
+id: main_address
+label: 'Main Address'
+fieldset: Addresses
+multiple: false

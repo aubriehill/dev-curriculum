@@ -1,0 +1,18 @@
+uuid: 90a49d0e-1616-42a9-a1c7-1f8a1d93c56c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VYXb9HxyGGGAFiX5KC0A4jsIxkR8S5fpcvs35Q39AxQ
+name: medium_hq
+label: 'Medium HQ (768W)'
+effects:
+  88d5f001-9cf5-4dab-91b5-029f005c5319:
+    uuid: 88d5f001-9cf5-4dab-91b5-029f005c5319
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: null
+      upscale: false
+pipeline: high_quality

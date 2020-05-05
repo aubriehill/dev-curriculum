@@ -1,0 +1,12 @@
+uuid: 0409db41-c230-4cda-848a-7a52436ef731
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: x3R_ByQfh_IP1PdNkWfiMtU54VEbkhesOBJTMt8auUc
+id: media.entity_embed
+label: 'Entity Embed'
+targetEntityType: media
+cache: true

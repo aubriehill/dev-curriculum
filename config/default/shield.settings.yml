@@ -1,0 +1,9 @@
+print: ''
+allow_cli: true
+credential_provider: shield
+credentials:
+  shield:
+    user: ''
+    pass: ''
+_core:
+  default_config_hash: xJSy2IYbdMJkrOBDmqjaT_SkUDAK54WQ_Y4uUZkyQME

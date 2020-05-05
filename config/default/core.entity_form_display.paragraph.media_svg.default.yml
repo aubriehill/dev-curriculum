@@ -1,0 +1,27 @@
+uuid: ce32d518-0f23-4478-af83-f1abf8446d64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_svg.field_svg
+    - paragraphs.paragraphs_type.media_svg
+  module:
+    - media_library
+_core:
+  default_config_hash: J5loQIIEMpnAYkihJPQA2ulD1p4CO_l74NA3zflorew
+id: paragraph.media_svg.default
+targetEntityType: paragraph
+bundle: media_svg
+mode: default
+content:
+  field_svg:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,15 @@
+uuid: e617836f-f447-4cb3-91ab-d88e003844ab
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 13onmnKwN2VcAz5XJ1Ecw3OCfzIrxqsHXmfx2-Sqv6s
+id: yearly_backup
+label: 'Yearly backup'
+enabled: true
+keep: null
+period: 31449600
+cron: null
+source_id: entire_site
+destination_id: private_files
+settings_profile_id: null

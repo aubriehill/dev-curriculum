@@ -1,0 +1,12 @@
+uuid: 7cd8130a-6c37-4edb-bdf5-d0ebaf5aab05
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bVOtstZCr7UGBAZ1ABb7fLXCSphyoMBFoM_mlBAIFAE
+id: media_video
+label: 'Media - Video Embed'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

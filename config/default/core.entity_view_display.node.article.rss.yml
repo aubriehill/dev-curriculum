@@ -1,0 +1,27 @@
+uuid: 2985f7b2-ad9d-499b-9ce9-0132f55cc910
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 8KMlSdekO1uVgTIU2-aZSnMeNWfuofMafVjbaNuHQeU
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_tags: true
+  langcode: true

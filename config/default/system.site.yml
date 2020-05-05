@@ -1,0 +1,15 @@
+name: 'Curriculum Demo'
+mail: noreply@elevatedthird.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''
+_core:
+  default_config_hash: 3a5N1XjE3IUE0JJzr0PsIIUx1Xq4Juc0RKF8ldQJpx8
+uuid: b42a1820-2a74-4c8e-89e0-904196fa1c36

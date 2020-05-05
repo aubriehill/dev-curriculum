@@ -1,0 +1,22 @@
+uuid: 1a13d179-639b-4d9b-a895-9ce61747a755
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - themekit
+_core:
+  default_config_hash: 0P6mM5sz_SeTyq7QxSfxvcQZzdJRVE0g0rZkcZ_dqfk
+id: themekit_messages
+theme: themekit
+region: highlighted
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

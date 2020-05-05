@@ -1,0 +1,20 @@
+uuid: 239db6bb-cbe6-4c9b-aba6-d2d18f2816f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: ChGVmTce4jxIVqm77Q3ZpzIPq6WBfmlKDtd1-F2eOQg
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

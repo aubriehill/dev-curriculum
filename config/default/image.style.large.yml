@@ -1,0 +1,18 @@
+uuid: bb3a4dbd-5563-4100-9a9b-f3ff17bf256c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VHkZ7GoM8VIh3dQhG4sNIctNW1xA0CNvdiy1j1-6Kyg
+name: large
+label: 'Large (1366W)'
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+    id: image_scale
+    weight: 0
+    data:
+      width: 1366
+      height: null
+      upscale: false
+pipeline: medium_quality

@@ -1,0 +1,29 @@
+uuid: 9e03e6b6-18bb-43a4-95cc-a4111d910596
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: gLV901XD1-4fwKLx3cllUDwOPsVcRAEBY3lnUFlaHMw
+id: paragraph.field_media_order
+field_name: field_media_order
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: first
+      label: First
+    -
+      value: second
+      label: Second
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

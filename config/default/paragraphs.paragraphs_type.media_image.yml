@@ -1,0 +1,12 @@
+uuid: ff7e36bb-0567-4ffa-aa00-a702821446e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5p4h9MaWXhFFtMhdYgyVtI_iG8fI1dN49BIVVr_tWHY
+id: media_image
+label: 'Media - Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

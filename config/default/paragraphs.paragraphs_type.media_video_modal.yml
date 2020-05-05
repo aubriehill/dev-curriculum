@@ -1,0 +1,12 @@
+uuid: 159aa86b-38c9-496b-9cc9-d96e53094f7f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GS174ILb8zTuoRBKUwASCHp-WshIg-Ha7n7JuHy2GWs
+id: media_video_modal
+label: 'Media - Video Modal'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

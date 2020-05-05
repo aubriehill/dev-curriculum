@@ -1,0 +1,13 @@
+uuid: deb936a3-f976-436f-b873-529d005ccef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.video_type
+_core:
+  default_config_hash: 6d4zPhrcMqc154EC5594s2ZjK66JY4c1TK1IhK0-kiQ
+id: taxonomy_term.video_type
+target_entity_type_id: taxonomy_term
+target_bundle: video_type
+default_langcode: site_default
+language_alterable: false

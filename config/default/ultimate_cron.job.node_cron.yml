@@ -1,0 +1,19 @@
+uuid: 84a755e3-0eb1-4eac-a5a8-24e5ada0b591
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 3L7itsPClLgJ04nOmx5OM0WbMBPZfWg7dz7cq50tbHQ
+title: 'Mark old nodes as read'
+id: node_cron
+weight: 0
+module: node
+callback: node_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

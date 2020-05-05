@@ -1,0 +1,20 @@
+uuid: b0f0578f-6ed4-4560-a116-5cfb9993f19b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: sFKUyr5a4P-2XgceMDsRWqdIBk1Ue8KYQEQcuMj0t7Y
+name: small_square_1_1
+label: 'Small Square 1:1 (320 x 320)'
+effects:
+  52167151-b1f8-47c4-bb8e-2dd8309cd66c:
+    uuid: 52167151-b1f8-47c4-bb8e-2dd8309cd66c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      crop_type: focal_point
+pipeline: medium_quality

@@ -1,0 +1,15 @@
+uuid: bbce03c9-8bd1-401b-b01d-433974d33be5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZXmaNB0Bx0Bwre6plLxe-cmvzkGtdJzh_egNS-iCF58
+id: weekly_backup
+label: 'Weekly backup'
+enabled: true
+keep: 6
+period: 604800
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: null

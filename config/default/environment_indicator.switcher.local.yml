@@ -1,0 +1,12 @@
+uuid: cc1a1887-4866-4b21-acec-626d242b2682
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eFcGGk2Fu6YSh0G-yZqRGMJWnzJ2DVx0l8NaPMvveSs
+machine: local
+description: null
+name: Local
+url: 'http://paragon.drupalvm/'
+fg_color: '#fefdff'
+bg_color: '#005093'

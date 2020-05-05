@@ -1,0 +1,25 @@
+uuid: d782df44-b902-4b42-9d76-5d6a931e60f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.media_svg.field_svg
+    - paragraphs.paragraphs_type.media_svg
+_core:
+  default_config_hash: QvNLj00fGT2jjRVZtozYY-2tfLsrA8aFtselCJU4i_8
+id: paragraph.media_svg.preview
+targetEntityType: paragraph
+bundle: media_svg
+mode: preview
+content:
+  field_svg:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: form_preview
+      link: false
+    third_party_settings: {  }
+hidden: {  }

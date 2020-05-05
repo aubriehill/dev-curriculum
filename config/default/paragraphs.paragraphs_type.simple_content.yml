@@ -1,0 +1,12 @@
+uuid: 80901785-4fa7-4466-87bc-c2ae16476462
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9bj_PN1Tx0OFxD_Rsdn_S7_lhbNhhs-3vrMiGxeXKMQ
+id: simple_content
+label: 'Simple - Content'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

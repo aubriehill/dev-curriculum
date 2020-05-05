@@ -1,0 +1,21 @@
+uuid: 54b5b6c4-e93a-4e7c-8620-89b95e0f14ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_mime_type
+    - media.type.video
+_core:
+  default_config_hash: Q5zKhnr2taPq19QUEqTspZsZgHhtPrG1HKgjyE0WZ_Q
+id: media.video.field_file_mime_type
+field_name: field_file_mime_type
+entity_type: media
+bundle: video
+label: 'File MIME Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

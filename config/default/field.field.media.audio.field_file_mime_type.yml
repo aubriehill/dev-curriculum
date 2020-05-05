@@ -1,0 +1,21 @@
+uuid: 51ade204-d364-4c05-8da3-b92df4c2cde0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_mime_type
+    - media.type.audio
+_core:
+  default_config_hash: BMvupS8sKr0z1tipab3RIAkuEw5q-l9EFeehPNp74uw
+id: media.audio.field_file_mime_type
+field_name: field_file_mime_type
+entity_type: media
+bundle: audio
+label: 'File MIME Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

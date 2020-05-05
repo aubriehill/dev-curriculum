@@ -1,0 +1,27 @@
+uuid: baf014ce-7701-463f-b6aa-208efdc13fae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_image.field_image
+    - paragraphs.paragraphs_type.media_image
+  module:
+    - media_library
+_core:
+  default_config_hash: WUo6rRYAZyBz16Cy8HpVN615ga_3cfF7hTuv4NFWkCA
+id: paragraph.media_image.default
+targetEntityType: paragraph
+bundle: media_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

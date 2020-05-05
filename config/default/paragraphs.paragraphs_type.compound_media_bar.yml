@@ -1,0 +1,12 @@
+uuid: 2cf48a4f-724b-455b-b103-d75ad1abc585
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yOTG7OwG514SYuv_emR0Cx6uhQQAEgbkmqik3sSr1HE
+id: compound_media_bar
+label: 'Compound - Media Bar'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

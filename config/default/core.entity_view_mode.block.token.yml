@@ -1,0 +1,12 @@
+uuid: db290f42-ad38-42a5-99f6-390cf8c7edac
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+_core:
+  default_config_hash: AJ4KPUipTz1VsDPfMT_D9pamgbfXUJBgvYVel4P1DHE
+id: block.token
+label: Token
+targetEntityType: block
+cache: true
