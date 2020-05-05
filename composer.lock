@@ -4562,8 +4562,7 @@
             "homepage": "https://www.drupal.org/project/field_tools",
             "support": {
                 "source": "https://git.drupalcode.org/project/field_tools"
-            },
-            "time": "2019-08-17T20:08:06+00:00"
+            }
         },
         {
             "name": "drupal/focal_point",
@@ -4926,8 +4925,7 @@
             "homepage": "https://www.drupal.org/project/imageapi_optimize_gd",
             "support": {
                 "source": "https://git.drupalcode.org/project/imageapi_optimize_gd"
-            },
-            "time": "2019-08-22T23:44:33+00:00"
+            }
         },
         {
             "name": "drupal/imageapi_optimize_webp",
@@ -4969,8 +4967,7 @@
             "homepage": "https://www.drupal.org/project/imageapi_optimize_webp",
             "support": {
                 "source": "https://git.drupalcode.org/project/imageapi_optimize_webp"
-            },
-            "time": "2019-08-22T23:36:44+00:00"
+            }
         },
         {
             "name": "drupal/inline_entity_form",
@@ -5145,8 +5142,7 @@
             "homepage": "https://www.drupal.org/project/link_css",
             "support": {
                 "source": "https://git.drupalcode.org/project/link_css"
-            },
-            "time": "2016-11-08T03:19:30+00:00"
+            }
         },
         {
             "name": "drupal/linkit",
@@ -5754,8 +5750,7 @@
             "homepage": "https://www.drupal.org/project/paragon",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragon"
-            },
-            "time": "2020-04-28T20:06:28+00:00"
+            }
         },
         {
             "name": "drupal/paragon_adminkit",

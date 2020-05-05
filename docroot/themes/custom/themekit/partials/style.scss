@@ -1,0 +1,38 @@
+// All styles added by this theme.
+
+// Add foundation first so foundation utilities can be used everywhere
+@import "foundation";
+
+// Add your own theme/framework utils
+@import "../global/sass/framework/utils/utils";
+
+// Add rest of theme framework
+@import "../global/sass/framework/buttons";
+@import "../global/sass/framework/layout";
+@import "../global/sass/framework/links";
+@import "../global/sass/framework/typography";
+@import "../global/sass/framework/user";
+@import "../global/sass/framework/custom-styles";
+
+
+// Add anything from bower here
+
+@import "global/sass/base/settings";
+@import "global/sass/base/app";
+@import "global/sass/base/animation";
+@import "global/sass/base/config";
+
+@import "header/header";
+@import "footer/footer";
+
+@import "../global/sass/components/drupal";
+@import "../global/sass/components/accessibility";
+@import "../global/sass/components/svg";
+
+@import "../global/sass/paragraphs/paragraphs";
+@import "components/simple/simple";
+@import "components/compound/media-bar/compound";
+
+// @TODO: Choose one format and remove the other from the project
+@import "node/page";
+@import "node/teaser";

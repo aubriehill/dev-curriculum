@@ -1,0 +1,388 @@
+////
+/// Drupal default stuff
+////
+
+
+// The skip-link link will be completely hidden until a user tabs to the link.
+// See the element-focusable rule in system.base.css.
+#skip-link {
+  margin: 0;
+
+  a,
+  a:visited {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+  }
+}
+
+// Styling for Drupal admin tabs.
+#block-themekit-local-tasks {
+  ul.primary {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: key($drupal-tabs, wrap, background);
+    border-bottom: 1px solid key($drupal-tabs, wrap, border);
+
+    li {
+      list-style: none;
+      float: left;
+      margin-bottom: 0;
+
+      a {
+        position: relative;
+        padding: 8px 18px;
+        background: key($drupal-tabs, link, background);
+        border-top: 5px solid #ffd204;
+        display: block;
+        color: key($drupal-tabs, link, color);
+        font-weight: normal;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+          background: key($drupal-tabs, link, hover-background);
+          color: key($drupal-tabs, link, hover-color);
+        }
+      }
+    }
+
+    $alt-colors: key($drupal-tabs, alt-colors);
+
+    @for $i from 1 through length($alt-colors) {
+
+      li:nth-child(#{length($alt-colors)}n + #{$i}) {
+
+        a {
+          border-top: 5px solid nth($alt-colors, $i);
+
+          &:hover,
+          &:active {
+            background: nth($alt-colors, $i);
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#block-themekit-help {
+  &:first-child {
+    padding-top: 150px; // avoid overlapping with sticky header
+  }
+  p {
+    font-size: rem-calc(16);
+  }
+}
+
+
+// Custom styles for Drupal's notification messages.
+.messages {
+  color: $body-font-color;
+  margin: 150px 0 6px; // avoid overlapping with sticky header
+  padding: 8px 10px;
+  position: relative;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-image: none;
+
+  &:before {
+    @extend %icon-base;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .layout-builder-form & {
+    margin-top: 6px;
+  }
+}
+
+.messages--ok,
+.messages--status {
+  color: darken($statusokbg, 10%);
+  border-color: lighten($statusokbg, 50%);
+
+  a {
+    color: lighten($statusokbg, 50%);
+  }
+}
+
+.messages--status {
+  &:before {
+    @include icon(check, true);
+    color: #81b564;
+  }
+}
+
+.messages--ok {
+  &:before {
+    @include icon(info, true);
+    color: #81b564;
+  }
+}
+
+.messages--warning {
+  &:before {
+    @include icon(info);
+    color: #e2be6c;
+  }
+}
+
+.messages--error {
+  background-color: $errorbg;
+  border-color: darken($errorbg, 10%);
+  color: #fff;
+
+  a {
+    color: lighten($errorbg, 50%);
+  }
+
+  &:before {
+    @include icon(error);
+  }
+}
+
+.messages ul {
+  list-style: none;
+  margin: 0; /* LTR */
+  padding: 0;
+}
+.messages ul li {
+  border-bottom: 1px solid #fff;
+  list-style-image: none;
+  margin-bottom: 4px;
+  padding-bottom: 5px;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+// Fix some styles in Krumo
+.krumo-element,
+.krumo-footnote,
+.krumo-call,
+.krumo-preview {
+  color: #231f20;
+}
+
+//
+// Replace Drupal Ajax Throbber
+//
+// The following snippet replaces the default ajax throbber with a custom svg element and rotation.
+// The fallback replaces the Drupal gif with a less ugly custom gif. Only the throbber element has
+// been modified here, so it will still have the default behavior of appearing inline and default
+// size, etc. Size can be altered easily below.
+//
+// Color of svg spinner can easily be changed in the loader.svg file, or completely replace
+// with an alternative.
+//
+// Relies on modernizr cssanimations test.
+//
+.cssanimations .ajax-progress.ajax-progress-fullscreen {
+  height: 44px;
+  width: 44px;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background: $white;
+  z-index: z(ajax-throbber);
+  opacity: 0.9;
+  border: 2px solid $primary-color;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../../images/svg/loader.svg);
+    @include bg-style(contain);
+    animation: rotate 700ms linear infinite normal;
+  }
+}
+
+.no-cssanimations .ajax-progress.ajax-progress-fullscreen {
+  // Drupal default height, width
+  //height: 19px;
+  //width: 19px;
+  background: url(../../images/gif-loader.gif);
+  @include bg-style(contain);
+
+}
+
+#drupal-live-announce {
+  position: absolute;
+  bottom: 10px;
+  z-index: z(under);
+}
+
+// Fix file defaults
+.file {
+  background-image: none;
+  padding-left: 0;
+}
+
+// Layout Builder Customizations
+.layout-builder {
+  background: none;
+}
+
+.layout-builder-form {
+  position: relative;
+  padding-bottom: 50px;
+  & > .form-actions {
+    background: #f7f7f7;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 8px 32px;
+    z-index: 10;
+    display: flex;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(180deg,rgba(0,0,0,0), rgba(0,0,0,0.15));
+      position: absolute;
+      top: -10px;
+      left: 0;
+      z-index: 301;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 1rem 0.75rem 1rem 0;
+      padding: calc(1rem - 1px) calc(1.5rem - 1px);
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: #222330;
+      border: 1px solid transparent !important;
+      border-radius: 2px;
+      background-color: #d4d4d8;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-font-smoothing: antialiased;
+      &:hover {
+        background-color: #c2c3ca;
+      }
+    }
+
+    .button--primary {
+      color: #fff;
+      background-color: #003cc5;
+      &:hover {
+        color: #fff;
+        background-color: #0036b1;
+      }
+    }
+
+    #edit-preview-toggle {
+      align-self: flex-end;
+      .js-form-item {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.ui-dialog-off-canvas #drupal-off-canvas {
+  .js-layout-builder-category {
+    .details-wrapper {
+      a.use-ajax {
+        color: $white;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin-right: 10px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+ul.layout-selection svg {
+  width: 60px;
+  height: auto;
+}
+
+.layout-builder-block {
+  background: none;
+}
+.layout-builder__add-block {
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+.layout-builder-discard-changes,
+.layout-builder-form {
+  body.banner-has-media & {
+    padding-top: 100px;
+  }
+}
+
+.layout-builder-discard-changes {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  @include breakpoint(medium) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include breakpoint(large) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .form-actions {
+    display: flex;
+    align-items: center;
+    input.button--primary {
+      @include btn(primary);
+      margin-right: 10px;
+    }
+  }
+}
+
+.field--name-moderation-state {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  border: #ccc solid 1px;
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+    .form-type-select {
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+      label {
+        white-space: nowrap;
+        margin-right: 10px;
+      }
+      select {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

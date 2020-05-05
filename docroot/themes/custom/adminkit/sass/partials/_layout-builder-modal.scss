@@ -1,0 +1,284 @@
+////
+/// Customizations for layout builder modal
+////
+
+.layout-build-modal-form {
+  font-family: "Open Sans", sans-serif;
+  button,
+  input,
+  optgroup,
+  select,
+  textarea,
+  .js-form-item label,
+  h1, h2, h3, h4, h5, h6 {
+    color: $claro-text;
+    font-weight: normal;
+  }
+
+  .js-form-item label {
+    font-family: BlinkMacSystemFont , -apple-system , "Segoe UI" , Roboto , Oxygen-Sans , Ubuntu , Cantarell , "Helvetica Neue" , sans-serif;
+    color: $claro-text;
+    margin-bottom: 0.25rem;
+    font-size: 0.889rem;
+    font-weight: bold;
+    line-height: 1.125rem;
+  }
+
+  .form-number,
+  .form-text {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 3rem;
+    padding: calc(0.75rem - 1px) calc(1rem - 1px);
+    color: $claro-text;
+    border: 1px solid $claro-gray-blue;
+    border-radius: 0.125rem;
+    background: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:hover {
+      border-color: $claro-text;
+      box-shadow: inset 0 0 0 1px $claro-text;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px $claro-white, 0 0 0 5px #26a769;
+    }
+  }
+
+  .js-form-item-settings-label {
+    display: none;
+  }
+
+  .form-item-settings-admin-label {
+    display: none;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 1rem 0.75rem 1rem 0;
+    padding: calc(1rem - 1px) calc(1.5rem - 1px);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: $claro-text;
+    border: 1px solid transparent !important;
+    border-radius: 2px;
+    background-color: $claro-light-gray;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    &:hover {
+      text-decoration: none;
+      background-color: #c2c3ca;
+    }
+
+    &.button--primary {
+      color: $claro-white;
+      background-color: $claro-absolute-zero;
+
+      &:hover {
+        color: $claro-white;
+        background-color: #0036b1;
+      }
+    }
+  }
+
+  .button-action:before {
+    display: none;
+  }
+
+  .form-actions .dropbutton .dropbutton-action > * {
+    text-shadow: none;
+  }
+
+  .form-actions .dropbutton .dropbutton-action > *,
+  .dropbutton-widget .dropbutton-action a,
+  .dropbutton-widget .dropbutton-action input,
+  .dropbutton-widget .dropbutton-action button,
+  .dropbutton-multiple .dropbutton-widget,
+  .dropbutton-widget .dropbutton-action input,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button {
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 500;
+  }
+
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:hover,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:hover,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:hover,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action a:focus,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action button:focus,
+  .dropbutton-wrapper .dropbutton-widget .dropbutton-action input:focus {
+    box-shadow: none;
+  }
+
+  .dropbutton-widget .button {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-toggle button,
+  .form-actions .dropbutton .secondary-action {
+    border-color: #ffffff;
+  }
+
+  .dropbutton-multiple .dropbutton-widget {
+    background: #fcfcfa;
+    background-image: none;
+    text-shadow: none;
+  }
+
+  .form-actions .dropbutton-multiple .dropbutton-widget {
+    background-color: #0071b8;
+  }
+
+  .dropbutton-multiple .dropbutton-widget {
+    text-shadow: none;
+  }
+
+  .dropbutton-multiple.open .dropbutton-action:first-child a,
+  .dropbutton-multiple.open .dropbutton-action:first-child .button {
+    border-radius: 0;
+  }
+
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:hover,
+  .form-actions .dropbutton-wrapper .dropbutton-widget .dropbutton-action .button:focus {
+    background-image: none;
+    box-shadow: none;
+  }
+
+  select {
+    min-height: 28px;
+    text-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 1px 1.571em 1px 0.5em;
+    cursor: pointer;
+    transition: all 0.1s;
+    border: 1px solid #a6a6a6;
+    border-radius: 0.143em;
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.6);
+    font-size: 0.875rem;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+      border-radius: 0;
+      background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
+    }
+
+    select:focus,
+    select:hover {
+      background: url(../images/caret-down.svg) no-repeat 98% 64% #fcfcfa;
+    }
+    select:focus {
+      border-color: #68a3cf;
+      color: #000;
+      outline: 2px solid #C1E0FF;
+      outline-offset: 0;
+    }
+  }
+
+  .paragraphs-dropbutton-wrapper {
+    input.button + input.button {
+      margin-left: 1em;
+    }
+  }
+
+  a.tabledrag-handle .handle {
+    width: 27px;
+    height: 24px;
+    margin-top: 0;
+    abbr.tabledrag-changed {
+      font-size: 0.75rem;
+    }
+  }
+  .draggable {
+    td {
+      padding: 10px 12px;
+    }
+  }
+
+  input.form-autocomplete.ui-autocomplete-input {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='20' viewBox='0 0 20 20' xmlns=…87,3.38528 6.8811016,2.996997 8,2.999781Z' fill='%23868686'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+
+  // Custom Link Styles
+  .field--type-link {
+    .fieldset-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      .js-form-item {
+        flex: 1;
+        margin: 0 16px 0 0;
+        max-width: 440px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+
+      input {
+        width: 100%;
+      }
+
+      details {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  .rendered-entity {
+    display: flex;
+    flex-wrap: wrap;
+
+    .media {
+      flex: 0 0 100%;
+    }
+
+    input {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  svg, img {
+    max-width: 100px;
+  }
+}
+
+.ui-widget.ui-autocomplete {
+  background: red;
+  overflow: hidden;
+  color: $claro-text-light;
+  border: 1px solid rgba(216, 217, 224, 0.8);
+  border-top: 0;
+  border-radius: 0 0 0.125rem 0.125rem;
+  background: $claro-white;
+  box-shadow: 0 0.125rem 0.25rem rgba(34, 35, 48, 0.1);
+  .ui-menu-item {
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+  }
+  .ui-menu-item-wrapper {
+    display: block;
+    padding: 0.75rem 0.9375rem;
+    color: inherit;
+    background: inherit;
+  }
+}

@@ -1,0 +1,27 @@
+name: Themekit
+type: theme
+description: A subtheme of Classy, this is the intended starter theme the Paragon distribution of Drupal 8.
+core: 8.x
+# Defines the base theme
+base theme: classy
+
+ckeditor_stylesheets:
+  - dist/wysiwyg.css
+
+libraries:
+  - core/Drupal
+  - themekit/base
+  - themekit/themekit
+
+regions:
+  header: Header
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured: Featured
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+

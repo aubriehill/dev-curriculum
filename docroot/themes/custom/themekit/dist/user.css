@@ -1,0 +1,2 @@
+.user-login{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh}.user-login>*{max-width:34.375rem}.user-login__content{padding:1.5rem;border:1px solid #cacaca;box-shadow:rgba(0,0,0,0.2) 0 12px 30px -12px}.user-login__links{margin:0;padding:0;list-style:none}
+

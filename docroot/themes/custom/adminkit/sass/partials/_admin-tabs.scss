@@ -1,0 +1,30 @@
+////
+/// Custom adjustments to admin tabs
+////
+
+.field-group-tabs-wrapper {
+  .vertical-tabs {
+    margin-right: 0;
+    margin-left: 0;
+    @media screen and (min-width: 85em) {
+      display: flex;
+    }
+    .vertical-tabs__menu {
+      width: 200px;
+      flex-shrink: 0;
+      float: none;
+    }
+
+    .vertical-tabs__items--processed {
+      @media screen and (min-width: 85em) {
+        width: calc(100% - 200px);
+        flex-shrink: 0;
+        top: 0;
+        margin-left: 0;
+      }
+      .vertical-tabs__item {
+        overflow: visible;
+      }
+    }
+  }
+}
