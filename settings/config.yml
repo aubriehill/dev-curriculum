@@ -1,0 +1,29 @@
+# DrupalVM project-specific configuration overrides
+vagrant_project_name: curriculum
+vagrant_ip: 192.168.87.37
+vagrant_hostname: '{{ vagrant_project_name }}.dvm'
+vagrant_machine_name: '{{ vagrant_project_name }}'
+
+vagrant_synced_folders:
+  - local_path: .
+    destination: '/var/www/{{ vagrant_project_name }}'
+    type: nfs
+    create: true
+
+drupal_composer_install_dir: '/var/www/{{ vagrant_project_name }}'
+drupal_build_composer_project: false
+drupal_install_site: false
+drupal_core_path: '{{ drupal_composer_install_dir }}/docroot'
+
+installed_extras:
+  - adminer
+  - drupalconsole
+  - drush
+  - mailhog
+  - memcached
+  - pimpmylog
+  - varnish
+  - xdebug
+
+php_xdebug_version: 2.9.5
+ansible_python_interpreter: /usr/bin/python

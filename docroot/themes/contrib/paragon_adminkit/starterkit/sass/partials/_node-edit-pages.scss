@@ -1,0 +1,182 @@
+/*
+@TODO Custom Styles
+ */
+
+// Disable the right sidebar on node edit forms for all but large screens.
+$max-width: 900px;
+$meta-width: 400px;
+$transition-time: 1s;
+
+.layout-node-form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.layout-region {
+  position: relative;
+  &.layout-region-node-main,
+  &.layout-region-node-secondary {
+    float: none;
+    width: auto;
+  }
+
+  &.layout-region-node-main {
+    padding-right: 0;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  &.layout-region-node-secondary {
+    display: flex;
+    align-items: flex-start;
+    //margin: 122px 0 0;
+    margin: 122px -48px 0 65px;
+
+    .vertical-tabs__item > summary {
+      display: block;
+    }
+
+    .toggle-meta {
+      background: $claro-absolute-zero;
+      color: $claro-white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: none;
+      padding: 5px 10px;
+      transform: rotate(-90deg) translateY(-100%);
+      transform-origin: right top;
+      transition: margin-right $transition-time ease;
+      position: absolute;
+      white-space: nowrap;
+      right: 100%;
+    }
+
+    .entity-meta__wrapper {
+      width: 0;
+      transition: width $transition-time ease;
+      overflow: hidden;
+
+      .entity-meta {
+        display: none;
+        width: $meta-width;
+      }
+    }
+
+    &.meta-open {
+      margin-right: 0;
+
+      .entity-meta__wrapper {
+        display: block;
+        width: $meta-width + 2px;
+      }
+      .entity-meta {
+        display: block;
+      }
+    }
+    &.closing {
+      .entity-meta {
+        display: block;
+      }
+    }
+
+    input[type="text"] {
+      max-width: $max-width / 2;
+    }
+    textarea,
+    .description{
+      max-width: $max-width;
+    }
+  }
+
+  // Make node footer (save, content moderation) sticky to bottom
+  // for easier access to saving node page
+  &.layout-region-node-footer {
+    position: sticky;
+    flex: 0 0 100%;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    padding-right: 0;
+
+    .layout-region-node-footer__content {
+      background: $claro-white;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        width: 100%;
+        height: 5px;
+        display: block;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0%, rgba(255,255,255,0) 100%);
+      }
+
+      .divider {
+        flex: 0 0 100%;
+      }
+
+      .field--name-moderation-state .js-form-wrapper {
+        display: flex;
+
+        .js-form-item {
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          margin-right: 10px;
+        }
+
+        .form-item__label {
+          margin-right: 4px;
+        }
+      }
+
+      .form-actions {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .action-link {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Set max width for text areas
+.field--type-text-with-summary,
+.field--type-text-long,
+.field--type-string-long,
+.field--type-text-long .js-text-format-wrapper {
+  max-width: $max-width;
+}
+
+// Custom Link Styles
+.field--type-link {
+  .fieldset__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .js-form-item {
+      flex: 1;
+      margin: 0 16px 0 0;
+      max-width: 440px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+
+    details {
+      flex: 0 0 100%;
+    }
+  }
+}
