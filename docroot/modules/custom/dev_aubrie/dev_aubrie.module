@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains dev_aubrie.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dev_aubrie_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dev_aubrie module.
+    case 'help.page.dev_aubrie':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Dev curriculum module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dev_aubrie_theme() {
+  return [
+    'test_block' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

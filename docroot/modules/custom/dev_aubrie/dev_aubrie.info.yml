@@ -1,0 +1,5 @@
+name: 'DEV Aubrie'
+type: module
+description: 'Dev curriculum module'
+core: 8.x
+package: 'DEV'

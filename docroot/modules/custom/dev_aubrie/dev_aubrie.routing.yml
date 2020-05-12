@@ -1,0 +1,7 @@
+dev_aubrie.default_form:
+  path: '/dev_aubrie/form/default'
+  defaults:
+    _form: '\Drupal\dev_aubrie\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'
