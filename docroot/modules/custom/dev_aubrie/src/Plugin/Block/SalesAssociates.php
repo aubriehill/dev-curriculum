@@ -3,6 +3,8 @@
 namespace Drupal\dev_aubrie\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Cookie;
 
 /**
  * Provides a 'TestBlock' block.
@@ -19,7 +21,19 @@ class SalesAssociates extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['#theme'] = 'test_block';
+    $build['#theme'] = 'aubrie_sales_associates';
+
+
+    $request = \Drupal::request();
+    $cookies = $request->cookies;
+    $aubrie_sales_associates_cookie = json_decode($cookies->get('aubrie_sales_associates'));
+
+    // Check if cookie has been set, if not set it.
+    if (empty($aubrie_sales_associates_cookie)) {
+      $response = new Response();
+      $response->headers->setCookie(new Cookie('aubrie_sales_associates', 1, time() + (86400 * 30), '/', $request->getHost(), FALSE, FALSE));
+      $response->sendHeaders();
+    }
 
     // Data set
     $sales_associates = [
@@ -76,6 +90,9 @@ class SalesAssociates extends BlockBase {
       'Santos L. Halper',
     ];
 
+    /** @var \Drupal\dev_aubrie\Service\PersonalizationService $my_service */
+    $personalization_service = \Drupal::service('dev_aubrie.personalization_service');
+
     $structured_associates = [];
     foreach ($sales_associates as $associate) {
       // Take the first word as first name, remaining string will be last name
@@ -83,6 +100,7 @@ class SalesAssociates extends BlockBase {
       $structured_associates[] = [
         'first_name' => $split[0],
         'last_name' => array_key_exists('1', $split) ? $split[1] : '',
+        'machine_name' => $personalization_service->encodeName($associate),
       ];
     }
 

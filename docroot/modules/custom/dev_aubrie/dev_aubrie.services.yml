@@ -1,0 +1,7 @@
+services:
+  logger.channel.dev_aubrie:
+    parent: logger.channel_base
+    arguments: ['dev_aubrie']
+  dev_aubrie.personalization_service:
+    class: Drupal\dev_aubrie\Service\PersonalizationService
+    arguments: ['@current_user']

@@ -1,4 +1,4 @@
-uuid: 574fc441-0638-4066-88fd-18540a4a55d6
+uuid: 58991780-d8d2-4dae-ad05-e0b7e82b3256
 langcode: en
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - dev_aubrie
   theme:
     - themekit
-id: testblock
+id: aubriesalesassociates
 theme: themekit
 region: content
-weight: -1
+weight: 0
 provider: null
-plugin: test_block
+plugin: aubrie_sales_associates
 settings:
-  id: test_block
-  label: 'Test block'
+  id: aubrie_sales_associates
+  label: 'Aubrie Sales Associates'
   provider: dev_aubrie
   label_display: visible
 visibility: {  }
