@@ -8,11 +8,11 @@ use Drupal\Core\Block\BlockBase;
  * Provides a 'TestBlock' block.
  *
  * @Block(
- *  id = "test_block",
- *  admin_label = @Translation("Test block"),
+ *  id = "aubrie_sales_associates",
+ *  admin_label = @Translation("Aubrie Sales Associates"),
  * )
  */
-class TestBlock extends BlockBase {
+class SalesAssociates extends BlockBase {
 
   /**
    * {@inheritdoc}

@@ -28,7 +28,7 @@ function dev_aubrie_help($route_name, RouteMatchInterface $route_match) {
  */
 function dev_aubrie_theme() {
   return [
-    'test_block' => [
+    'aubrie_sales_associates' => [
       'variables' => [
         'content' => NULL
       ],
