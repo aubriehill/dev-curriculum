@@ -1,0 +1,28 @@
+uuid: ee074709-9c9c-4a3a-bdd2-0020db2d20cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headshot
+    - media.type.image
+    - node.type.sales_associate
+id: node.sales_associate.field_headshot
+field_name: field_headshot
+entity_type: node
+bundle: sales_associate
+label: Headshot
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

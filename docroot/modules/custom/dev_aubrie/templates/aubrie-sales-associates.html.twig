@@ -12,12 +12,5 @@
     'clear-both',
 ] %}
 <div{{ attributes.addClass(classes) }}>
-  <ol>
-  {% for value in content %}
-    <li>
-      {{ value.first_name }} {{ value.last_name }}<br/>
-      {{ value.machine_name }}
-    </li>
-  {% endfor %}
-  </ol>
+  {{ content }}
 </div>

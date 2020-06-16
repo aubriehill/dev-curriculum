@@ -1,0 +1,70 @@
+uuid: 19055334-56be-4436-a5a6-500cab967115
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sales_associate.body
+    - field.field.node.sales_associate.field_email
+    - field.field.node.sales_associate.field_first_name
+    - field.field.node.sales_associate.field_headshot
+    - field.field.node.sales_associate.field_last_name
+    - field.field.node.sales_associate.field_phone_number
+    - field.field.node.sales_associate.field_title
+    - node.type.sales_associate
+  module:
+    - telephone
+    - text
+    - user
+id: node.sales_associate.default
+targetEntityType: node
+bundle: sales_associate
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_headshot:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_phone_number:
+    weight: 3
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_first_name: true
+  field_last_name: true
+  langcode: true

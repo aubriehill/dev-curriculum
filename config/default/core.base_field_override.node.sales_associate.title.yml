@@ -1,0 +1,18 @@
+uuid: 714224fa-02d7-47e7-8f19-e0a301b84b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_associate
+id: node.sales_associate.title
+field_name: title
+entity_type: node
+bundle: sales_associate
+label: 'Full Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

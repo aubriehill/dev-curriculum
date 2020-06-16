@@ -1,0 +1,66 @@
+uuid: b01d03ce-1f5f-427c-af52-ca4755a29d7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sales_associate.body
+    - field.field.node.sales_associate.field_email
+    - field.field.node.sales_associate.field_first_name
+    - field.field.node.sales_associate.field_headshot
+    - field.field.node.sales_associate.field_last_name
+    - field.field.node.sales_associate.field_phone_number
+    - field.field.node.sales_associate.field_title
+    - node.type.sales_associate
+    - responsive_image.styles.square_1_1
+  module:
+    - media_responsive_thumbnail
+    - telephone
+    - user
+id: node.sales_associate.teaser
+targetEntityType: node
+bundle: sales_associate
+mode: teaser
+content:
+  field_email:
+    type: basic_string
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_headshot:
+    type: media_responsive_thumbnail
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: square_1_1
+      image_link: ''
+    third_party_settings: {  }
+  field_phone_number:
+    type: telephone_link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_first_name: true
+  field_last_name: true
+  langcode: true

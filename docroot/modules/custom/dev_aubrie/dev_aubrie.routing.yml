@@ -5,3 +5,10 @@ dev_aubrie.default_form:
     _title: 'DefaultForm'
   requirements:
     _access: 'TRUE'
+dev_aubrie.sales_associates_form:
+  path: '/dev_aubrie/form/sales-associates-form'
+  defaults:
+    _form: '\Drupal\dev_aubrie\Form\SalesAssociatesForm'
+    _title: 'SalesAssociatesForm'
+  requirements:
+    _access: 'TRUE'

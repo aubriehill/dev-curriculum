@@ -1,0 +1,21 @@
+uuid: 6cf02dd9-e248-4bc6-8c2b-f4f5b89546fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.sales_associate
+  module:
+    - telephone
+id: node.sales_associate.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: sales_associate
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

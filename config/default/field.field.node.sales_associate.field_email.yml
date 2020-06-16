@@ -1,0 +1,19 @@
+uuid: d37f9639-d75d-4a19-8008-439d2d4cd7bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.sales_associate
+id: node.sales_associate.field_email
+field_name: field_email
+entity_type: node
+bundle: sales_associate
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

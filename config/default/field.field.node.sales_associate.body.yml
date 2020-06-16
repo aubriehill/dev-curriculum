@@ -1,0 +1,23 @@
+uuid: 370ccd1b-2681-4477-bc7b-b80b62fee8ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sales_associate
+  module:
+    - text
+id: node.sales_associate.body
+field_name: body
+entity_type: node
+bundle: sales_associate
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,11 @@
+uuid: d4222631-8229-4eec-8e3e-dc2f1f180a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sales_associate
+id: node.sales_associate
+target_entity_type_id: node
+target_bundle: sales_associate
+default_langcode: site_default
+language_alterable: false

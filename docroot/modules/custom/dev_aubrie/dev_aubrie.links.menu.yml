@@ -1,0 +1,5 @@
+dev_aubrie.sales_associates:
+  title: 'Sales Form'
+  route_name: dev_aubrie.sales_associates_form
+  description: 'Some Form.'
+  parent: system.admin_config

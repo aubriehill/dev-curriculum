@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - dev_aubrie
+    - system
   theme:
     - themekit
 id: aubriesalesassociates
@@ -17,4 +18,9 @@ settings:
   label: 'Aubrie Sales Associates'
   provider: dev_aubrie
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
