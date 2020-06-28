@@ -36,3 +36,33 @@ function dev_aubrie_theme() {
     ],
   ];
 }
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function dev_aubrie_node_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  // Only adjust nodes that have unique_identifier field.
+  if ($entity->hasField('field_unique_identifier')) {
+    if ($entity->hasField('field_email') && !empty($email = $entity->field_email->value)) {
+      // Clean up the email field to set as unique_identifier
+      $unique_identifier = \Drupal::service('pathauto.alias_cleaner')->cleanString($email);
+      $entity->set('field_unique_identifier', $unique_identifier);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function dev_aubrie_form_node_sales_associate_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Disable the unique_identifier field.
+  $form['field_unique_identifier']['widget'][0]['value']['#attributes']['disabled'] = 'disabled';
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function dev_aubrie_form_node_sales_associate_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Disable the unique_identifier field.
+  $form['field_unique_identifier']['widget'][0]['value']['#attributes']['disabled'] = 'disabled';
+}
