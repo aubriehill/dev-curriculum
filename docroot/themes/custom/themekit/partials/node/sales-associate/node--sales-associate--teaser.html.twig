@@ -93,6 +93,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
 {% set rendered_content = content|without('') %}
 
 {{ attach_library('classy/node') }}
+{{ attach_library('themekit/sales-associate--teaser') }}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}

@@ -23,6 +23,10 @@ const entryPoints = {
   // Regions
   header: './partials/header/header.scss',
   footer: './partials/footer/footer.scss',
+  // Nodes
+  'sales-associate--teaser-js': './partials/node/sales-associate/sales-associate--teaser.js',
+  // 'sales-associate--teaser-css': './partials/node/sales-associate/sales-associate--teaser.sass',
+  'sales-associate--teaser-css': './partials/node/sales-associate/sales-associate--teaser.scss',
 };
 
 const compiledEntries = {};
@@ -88,13 +92,13 @@ You may need to manually set the BrowserSync proxy name in webpack config.
       }),
 
       new BrowserSyncPlugin({
-          host: 'localhost',
-          port: 3000,
-          proxy: vmName,
-        },
-        {
-          injectCss: true,
-        }),
+        host: 'localhost',
+        port: 3000,
+        proxy: vmName,
+      },
+      {
+        injectCss: true,
+      }),
 
       new FixStyleOnlyEntriesPlugin(),
       new MiniCssExtractPlugin({ filename: '[name].css' }),

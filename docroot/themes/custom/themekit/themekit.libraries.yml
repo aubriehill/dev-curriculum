@@ -58,3 +58,12 @@ footer:
   dependencies:
     - themekit/themekit
 
+sales-associate--teaser:
+  version: 1.x
+  js:
+    dist/sales-associate--teaser-js.js: {}
+  css:
+    theme:
+      dist/sales-associate--teaser-css.css: {}
+  dependencies:
+    - themekit/themekit

@@ -10,7 +10,6 @@ ckeditor_stylesheets:
 
 libraries:
   - core/Drupal
-  - themekit/base
   - themekit/themekit
 
 regions:

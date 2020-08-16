@@ -1,7 +1,7 @@
 # DrupalVM project-specific configuration overrides
 vagrant_project_name: curriculum
 vagrant_ip: 192.168.87.37
-vagrant_hostname: '{{ vagrant_project_name }}.dvm'
+vagrant_hostname: 'curriculum.dvm'
 vagrant_machine_name: '{{ vagrant_project_name }}'
 
 vagrant_synced_folders:
