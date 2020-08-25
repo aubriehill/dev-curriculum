@@ -1,0 +1,25 @@
+uuid: 507e22f4-faa6-4490-9741-1286b4d7e64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.storage.block_content.field_container_transparency
+id: block_content.carousel_gallery.field_container_transparency
+field_name: field_container_transparency
+entity_type: block_content
+bundle: carousel_gallery
+label: 'Container Transparency'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: display_settings
+      display_name: container_transparency
+      arguments: {  }
+field_type: entity_reference

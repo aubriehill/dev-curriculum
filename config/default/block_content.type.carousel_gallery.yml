@@ -1,0 +1,8 @@
+uuid: c30b1a78-e8a6-436c-b6c5-89cd451017c0
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_gallery
+label: 'Carousel - Gallery'
+revision: 1
+description: ''

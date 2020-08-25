@@ -1,0 +1,25 @@
+uuid: 2d5b58a0-a8ca-41ad-90c6-eb3711f03cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.storage.block_content.field_background_tint
+id: block_content.carousel_gallery.field_background_tint
+field_name: field_background_tint
+entity_type: block_content
+bundle: carousel_gallery
+label: 'Background Tint'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: display_settings
+      display_name: container_transparency
+      arguments: {  }
+field_type: entity_reference

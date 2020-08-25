@@ -1,0 +1,41 @@
+uuid: d3064634-336f-480e-9e31-a41347ee0e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.field.block_content.carousel_gallery.field_background_color
+    - field.field.block_content.carousel_gallery.field_background_fill
+    - field.field.block_content.carousel_gallery.field_background_height
+    - field.field.block_content.carousel_gallery.field_background_tint
+    - field.field.block_content.carousel_gallery.field_background_width
+    - field.field.block_content.carousel_gallery.field_container_transparency
+    - field.field.block_content.carousel_gallery.field_container_width
+    - field.field.block_content.carousel_gallery.field_p_gallery_items
+    - field.field.block_content.carousel_gallery.field_text_color
+  module:
+    - entity_reference_revisions
+id: block_content.carousel_gallery.default
+targetEntityType: block_content
+bundle: carousel_gallery
+mode: default
+content:
+  field_p_gallery_items:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_background_color: true
+  field_background_fill: true
+  field_background_height: true
+  field_background_tint: true
+  field_background_width: true
+  field_container_transparency: true
+  field_container_width: true
+  field_text_color: true
+  langcode: true

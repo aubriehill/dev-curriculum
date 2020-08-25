@@ -1,0 +1,148 @@
+uuid: 197f7ed1-658b-43f8-9882-67c2a4ae0acf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.field.block_content.carousel_gallery.field_background_color
+    - field.field.block_content.carousel_gallery.field_background_fill
+    - field.field.block_content.carousel_gallery.field_background_height
+    - field.field.block_content.carousel_gallery.field_background_tint
+    - field.field.block_content.carousel_gallery.field_background_width
+    - field.field.block_content.carousel_gallery.field_container_transparency
+    - field.field.block_content.carousel_gallery.field_container_width
+    - field.field.block_content.carousel_gallery.field_p_gallery_items
+    - field.field.block_content.carousel_gallery.field_text_color
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_accordion:
+      children:
+        - group_text_options
+        - group_background_options
+      parent_name: ''
+      weight: 11
+      format_type: accordion
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        effect: none
+      label: Accordion
+    group_text_options:
+      children:
+        - field_text_color
+        - field_container_width
+        - field_container_transparency
+      parent_name: group_accordion
+      weight: 12
+      format_type: accordion_item
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: 'Text Options'
+    group_background_options:
+      children:
+        - field_background_color
+        - field_background_width
+        - field_background_height
+        - field_background_fill
+        - field_background_tint
+      parent_name: group_accordion
+      weight: 13
+      format_type: accordion_item
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: 'Background Options'
+id: block_content.carousel_gallery.default
+targetEntityType: block_content
+bundle: carousel_gallery
+mode: default
+content:
+  field_background_color:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_fill:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_height:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_tint:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_width:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_container_transparency:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_container_width:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_p_gallery_items:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: preview
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_text_color:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

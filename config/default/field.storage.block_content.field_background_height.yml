@@ -1,0 +1,20 @@
+uuid: c2e6e665-7ef3-4316-8e0e-68e64df877a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+id: block_content.field_background_height
+field_name: field_background_height
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

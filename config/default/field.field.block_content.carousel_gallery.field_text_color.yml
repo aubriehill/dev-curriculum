@@ -1,0 +1,25 @@
+uuid: 864cc0e7-fa53-43d7-93da-b3420f7960f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.storage.block_content.field_text_color
+id: block_content.carousel_gallery.field_text_color
+field_name: field_text_color
+entity_type: block_content
+bundle: carousel_gallery
+label: 'Text Color'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: display_settings
+      display_name: text_colors
+      arguments: {  }
+field_type: entity_reference

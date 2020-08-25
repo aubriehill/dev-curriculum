@@ -1,0 +1,52 @@
+uuid: 17791627-8681-46dd-ae0e-5620c94cf080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_item.field_description
+    - field.field.paragraph.gallery_item.field_heading
+    - field.field.paragraph.gallery_item.field_media
+    - field.field.paragraph.gallery_item.field_subheading
+    - paragraphs.paragraphs_type.gallery_item
+    - responsive_image.styles.full_column
+  module:
+    - media_responsive_thumbnail
+    - text
+id: paragraph.gallery_item.default
+targetEntityType: paragraph
+bundle: gallery_item
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media:
+    type: media_responsive_thumbnail
+    weight: 3
+    label: hidden
+    settings:
+      responsive_image_style: full_column
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_subheading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

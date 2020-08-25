@@ -1,0 +1,25 @@
+uuid: 3a6d3d30-768d-4b2b-a200-507ee2f1c2f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.storage.block_content.field_background_fill
+id: block_content.carousel_gallery.field_background_fill
+field_name: field_background_fill
+entity_type: block_content
+bundle: carousel_gallery
+label: 'Background Fill'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: display_settings
+      display_name: background_fill
+      arguments: {  }
+field_type: entity_reference

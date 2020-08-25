@@ -1,0 +1,56 @@
+uuid: 8a359dd5-3623-4b8c-8f9e-09778bbab9e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery_item.field_description
+    - field.field.paragraph.gallery_item.field_heading
+    - field.field.paragraph.gallery_item.field_media
+    - field.field.paragraph.gallery_item.field_subheading
+    - paragraphs.paragraphs_type.gallery_item
+  module:
+    - allowed_formats
+    - media_library
+    - text
+id: paragraph.gallery_item.default
+targetEntityType: paragraph
+bundle: gallery_item
+mode: default
+content:
+  field_description:
+    weight: 2
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings:
+      allowed_formats:
+        hide_help: '1'
+        hide_guidelines: '1'
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_subheading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,20 @@
+uuid: 3b6b04c5-3e26-4c97-9ea9-2ec8534f0f31
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+id: block_content.field_background_fill
+field_name: field_background_fill
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

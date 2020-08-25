@@ -1,0 +1,25 @@
+uuid: db7c532d-9466-485d-be67-11bdd9a67750
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:carousel_gallery:508c5221-1a3b-42ca-b67d-64dddc9580c0'
+  module:
+    - block_content
+  theme:
+    - themekit
+id: democarouselgallery
+theme: themekit
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:508c5221-1a3b-42ca-b67d-64dddc9580c0'
+settings:
+  id: 'block_content:508c5221-1a3b-42ca-b67d-64dddc9580c0'
+  label: 'Demo Carousel Gallery'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

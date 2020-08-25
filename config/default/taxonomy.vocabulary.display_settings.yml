@@ -1,0 +1,8 @@
+uuid: 4efbdb7a-4502-45b0-9f08-57848b7f0b41
+langcode: en
+status: true
+dependencies: {  }
+name: 'Display Settings'
+vid: display_settings
+description: ''
+weight: 0

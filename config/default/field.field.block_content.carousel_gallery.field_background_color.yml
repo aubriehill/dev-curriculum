@@ -1,0 +1,25 @@
+uuid: 35f94e41-4242-479e-b624-8870aacbd65d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel_gallery
+    - field.storage.block_content.field_background_color
+id: block_content.carousel_gallery.field_background_color
+field_name: field_background_color
+entity_type: block_content
+bundle: carousel_gallery
+label: 'Background Color'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: display_settings
+      display_name: background_color
+      arguments: {  }
+field_type: entity_reference
