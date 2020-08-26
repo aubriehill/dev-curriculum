@@ -50,6 +50,7 @@
     "webpack-fix-style-only-entries": "^0.4.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "ajv": "^6.0.0",
     "babel-polyfill": "^6.26.0",
     "eslint-import-resolver-webpack": "^0.11.1",

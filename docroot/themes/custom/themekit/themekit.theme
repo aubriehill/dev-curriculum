@@ -57,6 +57,21 @@ function themekit_preprocess_node_article(&$variables) {
 }
 
 /**
+ * Implements template_preprocess_block().
+ * For General block
+ */
+function themekit_preprocess_block(&$variables) {
+  // Set our own content blocks type preprocess and grab block bundle for theming purposes.
+  if (!empty($variables['elements']['content']['#block_content'])) {
+    $function = __FUNCTION__ . '_' . $variables['elements']['content']['#block_content']->bundle();
+    if (function_exists($function)) {
+      $function($variables);
+    }
+    $variables['block_type'] = $variables['elements']['content']['#block_content']->bundle();
+  }
+}
+
+/**
  * Paragraphs preprocess.
  */
 function themekit_preprocess_paragraph(&$variables) {

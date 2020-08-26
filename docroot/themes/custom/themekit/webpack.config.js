@@ -27,6 +27,8 @@ const entryPoints = {
   'sales-associate--teaser-js': './partials/node/sales-associate/sales-associate--teaser.js',
   // 'sales-associate--teaser-css': './partials/node/sales-associate/sales-associate--teaser.sass',
   'sales-associate--teaser-css': './partials/node/sales-associate/sales-associate--teaser.scss',
+  'carousel-gallery-css': './partials/components/carousel-gallery/carousel-gallery.scss',
+  'carousel-gallery-js': './partials/components/carousel-gallery/carousel-gallery.js',
 };
 
 const compiledEntries = {};

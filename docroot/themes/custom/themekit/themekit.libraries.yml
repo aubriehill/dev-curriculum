@@ -67,3 +67,14 @@ sales-associate--teaser:
       dist/sales-associate--teaser-css.css: {}
   dependencies:
     - themekit/themekit
+
+
+carousel-gallery:
+  version: 1.x
+  js:
+    dist/carousel-gallery-js.js: {}
+  css:
+    theme:
+      dist/carousel-gallery-css.css: {}
+  dependencies:
+    - themekit/themekit
